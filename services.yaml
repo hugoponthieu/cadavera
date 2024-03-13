@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: verb-service
+spec:
+  selector:
+    app: verb
+  ports:
+  - port: 3000
+    targetPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: adj-service
+spec:
+  selector:
+    app: adj
+  ports:
+  - port: 3000
+    targetPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: subject-service
+spec:
+  selector:
+    app: subject
+  ports:
+  - port: 3000
+    targetPort: 8080
+

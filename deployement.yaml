@@ -19,11 +19,11 @@ spec:
         - containerPort: 8080
         env:
         - name: SUBJECT_URL
-          value: "http://providers-subject:8080"
+          value: "subject-service"
         - name: VERB_URL
-          value: "http://providers-verb:8080"
+          value: "verb-service"
         - name: ADJECTIVE_URL
-          value: "http://providers-adj:8080"
+          value: "adj-service"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -45,8 +45,6 @@ spec:
         ports:
         - containerPort: 8080
         env:
-        - name: REGISTER_URLS
-          value: "http://registers:8080"
         - name: WORD_TYPE
           value: "SUBJECT"
 ---
@@ -70,8 +68,6 @@ spec:
         ports:
         - containerPort: 8080
         env:
-        - name: REGISTER_URLS
-          value: "http://registers:8080"
         - name: WORD_TYPE
           value: "VERB"
 ---
@@ -95,7 +91,5 @@ spec:
         ports:
         - containerPort: 8080
         env:
-        - name: REGISTER_URLS
-          value: "http://registers:8080"
         - name: WORD_TYPE
           value: "ADJECTIVE"
