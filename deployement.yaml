@@ -17,13 +17,13 @@ spec:
         image: fteychene/cloud-cadavre-exquis-dispatcher-bis:1.0-SNAPSHOT
         ports:
         - containerPort: 8080
-        env:
+      env:
         - name: SUBJECT_URL
-          value: "subject-service"
+          value: "subject-service:3000"
         - name: VERB_URL
-          value: "verb-service"
+          value: "verb-service:3000"
         - name: ADJECTIVE_URL
-          value: "adj-service"
+          value: "adj-service:3000"
 ---
 apiVersion: apps/v1
 kind: Deployment

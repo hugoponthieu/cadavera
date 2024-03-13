@@ -4,7 +4,7 @@ metadata:
   name: verb-service
 spec:
   selector:
-    app: verb
+    app: providers-verb
   ports:
   - port: 3000
     targetPort: 8080
@@ -15,7 +15,7 @@ metadata:
   name: adj-service
 spec:
   selector:
-    app: adj
+    app: providers-adj
   ports:
   - port: 3000
     targetPort: 8080
@@ -26,8 +26,7 @@ metadata:
   name: subject-service
 spec:
   selector:
-    app: subject
+    app: providers-subject
   ports:
   - port: 3000
     targetPort: 8080
-
