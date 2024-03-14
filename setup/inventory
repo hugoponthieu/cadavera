@@ -1,0 +1,2 @@
+[mesmachines]
+ovhInstance ansible_user=* ansible_host=*
