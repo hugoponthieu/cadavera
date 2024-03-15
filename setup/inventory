@@ -1,2 +1,2 @@
 [mesmachines]
-ovhInstance ansible_user=* ansible_host=*
+ovhInstance ansible_user=debian ansible_host=51.75.92.198 
