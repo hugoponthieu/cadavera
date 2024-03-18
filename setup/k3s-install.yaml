@@ -12,3 +12,8 @@
     - name: Wait until the file /etc/rancher/k3s is present before continuing
       ansible.builtin.wait_for:
         path: /etc/rancher/k3s/k3s.yaml
+    - name: Copy kubeconfig from server to host
+      ansible.builtin.fetch:
+        src: /etc/rancher/k3s/k3s.yaml
+        dest: /home/hugo/Bureau/cours/cloud_fth/work/cadavre/cadavera/setup/
+      become: true
