@@ -23,7 +23,7 @@ provider "openstack" {
 provider "ovh" {
   alias              = "ovh"
   endpoint           = "ovh-eu"
-  application_key    = "5662781c0b5418d2"
-  application_secret = "476f6026884867ad4aa134031e19b661"
-  consumer_key       = "8d709ce712a2ab3c2fd6732420933711"
+  application_key    =
+  application_secret =
+  consumer_key       =
 }
