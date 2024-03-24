@@ -1,0 +1,3 @@
+module "upServer" {
+  source = "./upServer"
+}

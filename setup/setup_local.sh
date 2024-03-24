@@ -4,3 +4,4 @@ url=$(cat k3s_url)
 rm k3s_url
 rm -r ovhInstance
 kubectl --kubeconfig k3s.yaml config set-cluster default --server="$url"
+mv k3s.yaml ../appYAML/k3s.yaml

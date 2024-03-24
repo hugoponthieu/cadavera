@@ -1,7 +1,7 @@
 resource "openstack_compute_keypair_v2" "test_keypair" {
   provider   = openstack.ovh
-  name       = "cadaveraHugo"
-  public_key = file("~/.ssh/id_ecdsa.pub")
+  name       = var.name_sshkey
+  public_key = file(var.file_sshkey)
 }
 
 resource "openstack_compute_instance_v2" "test_terraform_instance" {
