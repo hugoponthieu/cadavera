@@ -3,3 +3,4 @@ old/
 creds
 terraform*
 inventory
+k3s.yaml
