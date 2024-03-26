@@ -4,3 +4,4 @@ creds
 terraform*
 inventory
 k3s.yaml
+k3s_url
